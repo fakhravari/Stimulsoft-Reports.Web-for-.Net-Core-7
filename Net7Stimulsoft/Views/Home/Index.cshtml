@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<SelectListItem>
+
+<div dir="rtl" class="container-lg">
+    <form>
+        <label for="name">نام و نام خانوادگی:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+
+        <label for="tell">تلفن:</label>
+        <input type="number" id="tell" name="tell"><br><br>
+
+
+        انتخاب شهر  :
+        <select id="ostan">
+            <option selected="selected" value="0">انتخاب کنید</option>
+            @foreach (var m in Model)
+            {
+                <option value="@m.Value">@m.Text</option>
+            }
+        </select>
+        <br><br>
+        <input type="button" value="جستجو" onclick="Print()">
+    </form>
+</div>
+
+<div id="HtmlPrint" dir="ltr" class="container-lg">
+
+</div>
+
+
+<script>
+    function Print() {
+
+        $.ajax({
+            url: "/home/Search",
+            type: "POST",
+            data: { name: $("#name").val(), tell: $("#tell").val(), ostan: $("#ostan").val() },
+            success: function (result) {
+                $("#HtmlPrint").html(result);
+            },
+            error: function (xhr, status, error) {
+                alert("خطا در ارسال اطلاعات: " + error);
+            }
+        });
+    }
+</script>

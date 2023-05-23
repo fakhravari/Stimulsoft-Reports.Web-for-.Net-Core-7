@@ -1,4 +1,4 @@
-# Stimulsoft-Reports.Web-for-.Net-Core-7
+# Stimulsoft Reports.Web for .Net Core-7
 
 Configuration Solution Net7Stimulsoft
 <br/>

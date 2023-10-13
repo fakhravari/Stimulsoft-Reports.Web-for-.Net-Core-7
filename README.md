@@ -12,6 +12,10 @@ Configuration Solution Net7Stimulsoft
   </Target>
 </Project>
 ```
+<p align="right">
+<a target="_blank" href="https://drive.google.com/file/d/1gTpOVsqRrpxpm5ftNsB3Lc_0oBqLNZcc/view?usp=sharing">
+<font color="#0000FF">نصب نسخه 2021.1.1 به صورت افلاین</font></a></p>
+
 
 ![Screenshot 2023-05-22 212021](https://github.com/fakhravari/Stimulsoft-Reports.Web-for-.Net-Core-7/assets/4311975/9d6cd248-1585-440b-b085-8e227a6f78c2)
 
